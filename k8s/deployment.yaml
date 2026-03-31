@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: jgnunes12/k3s-lab:v1.08
+        image: jgnunes12/k3s-lab:v1.09
         imagePullPolicy: Always
         ports:
         - containerPort: 80
