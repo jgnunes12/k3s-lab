@@ -4,7 +4,7 @@ metadata:
   name: nginx
   annotations:
     argocd-image-updater.argoproj.io/image-list: nginx=jgnunes12/k3s-lab
-    argocd-image-updater.argoproj.io/nginx.update-strategy: latest
+    argocd-image-updater.argoproj.io/nginx.update-strategy: semver
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   replicas: 1
