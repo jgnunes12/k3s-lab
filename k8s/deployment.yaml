@@ -7,14 +7,14 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  template:
+  template:8
     metadata:
       labels:
         app: nginx
     spec:
       containers:
       - name: nginx
-        image: jgnunes12/k3s-lab:v1.18
+        image: jgnunes12/k3s-lab:v1.19
         imagePullPolicy: Always
         ports:
         - containerPort: 80
