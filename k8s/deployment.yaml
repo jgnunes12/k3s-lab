@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: nginx=jgnunes12/k3s-lab
     argocd-image-updater.argoproj.io/nginx.update-strategy: newest-build
+    argocd-image-updater.argoproj.io/nginx.container-name: nginx
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   replicas: 1
@@ -18,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: jgnunes12/k3s-lab:v1
+        image: jgnunes12/k3s-lab:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 80
